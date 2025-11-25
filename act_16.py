@@ -1,35 +1,22 @@
-nota = int(input("¿cuanto has sacado? :"))
-
-if nota == 0 :
-    print ("la nota es insuficiente")
-
-elif nota == 1 :
-    print ("la nota es insuficiente")
-
-elif nota == 2 :
-    print ("la nota es insuficiente")
-    
-elif nota == 3 :
-    print ("la nota es insuficiente")
-    
-elif nota == 4 :
-    print ("la nota es insuficiente")
-
-elif nota == 5 :
-    print ("justito")
-
-elif nota == 6 :
-    print ("bien pero mejorable")
-
-elif nota == 7 :
-    print ("bien echo tienes un notable")
-
-elif nota == 8 :
-    print ("bien echo tienes un notable")
-
-elif nota == 9 :
-    print ("enhorabuena tienes un sobresaliente")
-
-elif nota == 10 :
-    print ("enhorabuena tienes un sobresaliente")
-    
+def busqueda(numeros,eleccion):
+    izq = 0
+    der = len(numeros) - 1
+    medio = 0
+    while izq <= der:
+        medio = (izq + der) // 2
+        if numeros[medio] == eleccion:
+            return medio
+        elif numeros[medio] < eleccion:
+            izq = medio + 1
+        else:
+            der = medio - 1
+    return -1
+# numeros = [0,10,20,30,40,50,60,70,80,90]
+# eleccion = int(input("Elije el numero que quieras multiplo de 10: "))
+# 
+# resultado = busqueda(numeros,eleccion)
+# 
+# if resultado != -1:
+#     print("El numero",eleccion,"se encuentra en la posicion",(resultado + 1))
+# else:
+#     print("Ese numero no se encuentra.")

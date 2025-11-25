@@ -1,12 +1,19 @@
-n1 = input("dime un numero: ")
-n2 = input("dime otro numero: ")
+def esPrimo(numero):
+    if numero <= 1:
+        return False
+    if numero == 2:
+        return True
+    i = 2
+    while i < numero:
+        if numero % i == 0:
+            return False
+        i += 1
+    return True
 
-if (n1 > n2):
-    print ("el primer numero es mayor que el segundo")
+n = [1,2,3,4,5,6,7,8,9,10]
+nf = []
 
-elif (n1 < n2):
-    print ("el segundo numero es mayor")
-
-elif (n1 == n2):
-    print ("los dos numeros son iguales")
-
+for i in n:
+    if esPrimo(i):
+        nf.append(i)
+print(nf)

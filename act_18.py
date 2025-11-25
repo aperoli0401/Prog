@@ -1,15 +1,19 @@
-l1 = int(input("dime un lado "))
-l2 = int(input("dime otro lado "))
-l3 = int(input("dime el ultimo lado "))
+import act_16
+import act_15
 
-if l1 == l2 == l3:
-    print ("este triangulo es equilatero")
+numeros = [14,10,20,78,40,73,60,54,87,90]
+eleccion = 40
+print("Búsqueda Lineal")
+resultado=act_15.busquedaLineal(numeros, eleccion)
+if resultado != -1:
+    print("El numero",eleccion,"se encuentra en la posicion",(resultado))
+else:
+    print("Ese numero no se encuentra.")
+print("Búsqueda Binaria")
+resultado=act_16.busquedaBinaria(numeros, eleccion)
+if resultado != -1:
+    print("El numero",eleccion,"se encuentra en la posicion",(resultado))
+else:
+    print("Ese numero no se encuentra.")
 
-elif l1 == l2 or l2 == l3 or l3 == l1:
-    print ("este es un triangulo isosceles")
-
-elif l2 < l1 < l3:
-    print ("este trinagulo es escaleno")
-
-else :
-    print ("no es un triangulo")
+numeros_ordenados = sorted(numeros)

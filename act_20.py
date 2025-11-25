@@ -1,11 +1,13 @@
-numero = int(input("dime un numero "))
-a = 0
+original = [1,2,3,4,5]
 
-while a == 0:
-    print (a + 1)
+copia1 = original.copy()
+copia2 = original[0:4]
+copia3 = [1,2,3,4,5]
+copia4 = original
 
-if a == numero:
-    print("hemos llegado")
-
-else :
-    print("")
+for i in range(len(original)):
+    if len(original) != len(copia1):
+        print("No son iguales")
+    else:
+        print("Son iguales")
+        

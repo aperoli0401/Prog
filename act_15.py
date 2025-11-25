@@ -1,14 +1,8 @@
-anio = int(input("determina un anio: "))
-
-if anio % 4 == 0 :
-    print ("el anio es bisiesto") 
-
-elif anio % 100 == 0 :
-    print ("el anio no es bisiesto")
-
-elif anio % 4 == 0 and anio % 400 == 0:
-    print ("el anio tambien es bisiesto")
-    
-
-           
- 
+def busquedaLineal (lista, n):
+    i = 0
+    respuesta = -1
+    while i < len(lista) and respuesta == -1:
+        if lista[i] == n:
+            respuesta = i
+        i = i + 1 
+    return(respuesta)
