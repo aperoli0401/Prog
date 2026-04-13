@@ -39,8 +39,7 @@ public class Main {
 		conjuntoEntero.add(2);
 		conjuntoEntero.add(3);
 		conjuntoEntero.add(4);
-		
-		// La lista 
+		 
 		
 	}
 
