@@ -23,7 +23,7 @@ public class Ejercicio10 {
 
             // 2. Inserción de 3 nuevos registros
             // Usamos PreparedStatement por seguridad y eficiencia en inserciones
-            String sqlInsert = "INSERT INTO producto (id, nombre, descripcion, precio, pais) VALUES (?, ?, ?, ?, ?)";
+            String sqlInsert = "INSERT INTO producto (id, nombre, descripcion, precio, pais)";
             
             try (PreparedStatement ps = conn.prepareStatement(sqlInsert)) {
                 // Producto 1
