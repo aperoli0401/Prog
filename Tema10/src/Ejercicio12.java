@@ -44,12 +44,7 @@ public class Ejercicio12 {
                 }
             }
             
-            /* 
-             * NOTA SOBRE METADATOS:
-             * Los metadatos son fundamentales para herramientas de administración 
-             * o para programar software que deba adaptarse a bases de datos 
-             * cuya estructura no conoce de antemano (como un IDE o un ORM).
-             */
+            
 
         } catch (SQLException e) {
             System.err.println("Error obteniendo metadatos: " + e.getMessage());
